@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE</title>
+    <!-- pos用的阿里图标 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_511467_gbzuit7n00diy66r.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+        rem()
+        window.onresize = () => rem()
+
+        function rem() {
+            let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+            if (htmlWidth > 750) htmlWidth = 750
+            let htmlDom = document.getElementsByTagName('html')[0];
+            htmlDom.style.fontSize = htmlWidth / 375 * 100 + 'px';
+        }
+    </script>
+</body>
+
+</html>
+
